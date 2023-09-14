@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/foro">Volver a Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+    </nav><br><br><br>
+    <nav class="p-3 text-primary-emphasis bg-primary-subtle bs-body border border-primary-subtle rounded-3">
+          <form action="/foro" method="post">
+        <input type="text" name="autor" placeholder="Titulo de Post"><br>
+        <textarea name="contenido" cols="30" rows="10" placeholder="Contenido de Post"></textarea><br>
+        <input type="text" name="image" placeholder="direccion url image">
+        <button>Nuevo Post</button>
+        </form>
+    </nav>
+<script>src="/bootstrap.js"</script>
+</body>
+</html> 

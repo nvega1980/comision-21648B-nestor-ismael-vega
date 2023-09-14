@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/bootstrap.css">
+</head>
+<body>
+    <main>
+     <ul>
+    <% allNotes.forEach((nota) => { %>
+        <li>
+            <p>
+                <b>Titulo de Nota:</b><i>  <%= nota.autor %></i><br><br>
+                <b>Nota:  </b></i><%= nota.contenido %></i><br><br>
+                <b>Nota Creada:</b></i><%= nota.createdAt %></i><br>
+                <b>Nota Modificada:</b><i><%= nota.updatedAt %></i><br><br>
+                <a href="/foro/updatenot/<%= nota.id %>">Actualizar <b>Post</b></a>
+                <a href="/foro/delete/<%= nota.id %>">Eliminar <b>Post</b></a>
+            </p>
+        </li>
+    <% }); %>
+    </ul>
+    </main>
+<script>src="/bootstrap.js"</script>
+</body>
+</html>

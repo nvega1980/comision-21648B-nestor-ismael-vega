@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/foro">Ir a Foro Personalizado</a>
+    <h1>Modificacion de Post</h1>
+
+    <form action="/foro/updatenota" method="post">
+        <input type="text" name="id" value="<%= note.id %>" hidden>
+        <input type="text" name="autor" placeholder="Titulo de Post" value="<%= note.autor %>"><br>
+        <textarea name="contenido" cols="30" rows="10" placeholder="Contenido Post" ><%= note.contenido %></textarea><br>
+        <button>Guardar</button>
+    </form>    
+</body>
+</html>
